@@ -83,7 +83,6 @@ const ConferenceEvent = () => {
     const items = getItemsFromTotalCost();
 
     const ItemsDisplay = ({ items }) => {
-        console.log(items);
     return <>
         <div className="display_box1">
             {items.length === 0 && <p>No items selected</p>}
@@ -304,7 +303,7 @@ const ConferenceEvent = () => {
                         </div>
                     ) : (
                         <div className="total_amount_detail">
-                            <TotalCost totalCosts={totalCosts}  ItemsDisplay={() => <ItemsDisplay items={items} />} />
+                            <TotalCost totalCosts={totalCosts} ItemsDisplay={() => <ItemsDisplay items={items} />} />
                         </div>
                     )
                 }
